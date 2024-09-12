@@ -1,0 +1,341 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Caveat", cursive;
+    font-size: 1.2em;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    background: url('https://i.pinimg.com/originals/eb/54/4c/eb544c6452693d94c8c601d1ad9092c8.gif') no-repeat center center fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+
+
+
+/* Optional: For a Semi-Transparent Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
+}
+
+/* Header */
+header {
+    background: url('https://i.pinimg.com/originals/05/84/bf/0584bfa72bcd218e34d4da8d0e473f57.gif') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+/* Navigation Bar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(45, 115, 168, 0.9); /* Semi-transparent lighter blue */
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: #6079ab;
+    color: #f0f0f0;
+}
+
+.navbar ul li a.active {
+    background-color: #fcb97b;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background: #fcb97b;
+    color: #1A2B4C;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Section Backgrounds */
+.section-gradient {
+    padding: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.2) 100%), url('https://www.transparenttextures.com/patterns/white-diamond.png');
+    color: white;
+}
+
+
+
+/* Centered Features Section */
+.features-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.features-section .feature {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features-section .feature img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.features-section .feature img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.features-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+/* About Section */
+.about-section p, .about-section ul {
+    margin-bottom: 15px;
+}
+
+.about-section {
+    padding: 50px;
+    color: white;
+    text-align: left;
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.sticky-note.team-sticky-note {
+    background-color: #8e7df1; /* Sticky note color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    margin-left: 20px; /* Move sticky note slightly to the left */
+    position: relative;
+}
+
+.group-photo {
+    margin-bottom: 20px;
+}
+
+.group-photo img {
+    width: 80%; /* Center image */
+    height: auto;
+    border-radius: 0; /* Sharp edges */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    display: block;
+    margin: 0 auto; /* Center image horizontally */
+}
+
+.team-list {
+    text-align: center;
+}
+
+.team-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.team-list li {
+    margin: 10px 0;
+}
+
+.team-member a {
+    color: #1A2B4C; /* Link color */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.team-member a:hover {
+    color: #FF8A80; /* Hover color */
+    transform: scale(1.05);
+}
+
+/* Project Overview Section */
+.project-overview {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sticky-note.project-sticky-note {
+    background-color: #6d956fe1; /* Sticky note color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+}
+
+.sticky-note h2, .sticky-note h3 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    color: #1A2B4C;
+}
+
+.sticky-note h3 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.sticky-note p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.sticky-note img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+/* GitHub Section */
+.github-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.sticky-note.github-sticky-note {
+    background-color: #cad4de; /* Sticky note color */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.github-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.github-link i {
+    font-size: 2.5rem; /* Make the icon bigger */
+    margin-right: 10px; /* Space between the icon and text */
+    color: #333;
+}
+
+.github-link:hover {
+    color: #000;
+}
+
+.github-link i:hover {
+    color: #000;
+}
+/* Video Section */
+.video-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0; /* Optional background color for the section */
+    color: #333;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background-color: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
